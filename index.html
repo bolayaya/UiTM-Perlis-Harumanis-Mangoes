@@ -1,0 +1,141 @@
+<!-- NUR ALIYA YASMIN BINTI MOHAMAD HAFIZ -->
+<!-- 2023103013 -->
+<!-- RCDCS2514A -->
+<!-- ASSIGNMENT 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>UiTM Perlis Harumanis Mangoes</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with title and navigation menu -->
+    <header>
+        <h1>UiTM Perlis Harumanis Mangoes</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content of the webpage -->
+    <main>
+        <!-- About section -->
+        <section id="about">
+            <h2>About Harumanis Mangoes</h2>
+            <p>
+                Harumanis mangoes are a premium variety grown exclusively in Perlis, Malaysia.
+                Harumanis mangoes, also known as "fragrant mangoes," are a highly prized variety cultivated extensively in Malaysia.
+                They are celebrated for their exceptional sweetness, distinctive aroma, and health benefits.
+                These mangoes are a favorite among locals and tourists alike.
+            </p>
+        </section>
+
+        <!-- Pictures section -->
+        <section>
+            <h2>Pictures of Harumanis Mangoes</h2>
+            <div class="flex-container">
+                <!-- Images of Harumanis mangoes -->
+                <img src="harumanis 2.jpg" alt="Image 1">
+                <img src="Harumango.webp" alt="Image 2">
+                <img src="harumanis.jpg" alt="Image 3">
+            </div>
+        </section>
+
+        <!-- Benefits section -->
+        <section id="benefits">
+            <h2>Benefits</h2>
+
+            <!-- Nutritional benefits -->
+            <h3>Nutritional Benefits</h3>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Vitamins</summary>
+                        <p>Harumanis mangoes are rich in vitamins A, C, and several B vitamins, which are essential for immune function and overall health.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Dietary Fiber</summary>
+                        <p>These mangoes contain dietary fiber that aids in digestion and helps maintain healthy cholesterol levels.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Iron Content</summary>
+                        <p>Harumanis mangoes provide a good source of iron, which is important for preventing anemia and supporting overall energy levels.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <!-- Health benefits -->
+            <h3>Health Benefits</h3>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Boosts Immunity</summary>
+                        <p>The high vitamin C content supports the immune system.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Digestive Health</summary>
+                        <p>Their fiber helps maintain digestive regularity.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Weight Management</summary>
+                        <p>
+                            The natural sugars and fiber can promote a feeling of fullness, making them a good option for those on a diet.
+                        </p>
+                    </details>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact/order form section -->
+        <section id="contact">
+            <h2>Order Your Mangoes</h2>
+            <form id="orderForm">
+                <!-- Input for user's name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <!-- Input for user's email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <!-- Input for mango quantity -->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 UiTM Perlis. All rights reserved.</p>
+        <!-- Placeholder for dynamic date and time -->
+        <p id="datetime"></p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    color: #333; /* Consistent text color */
+    background: url('background.png') no-repeat center center fixed; /* Full-screen background */
+    background-size: cover; /* Ensures the background covers the viewport */
+}
+
+p {
+    font-family: 'Poppins'; /* Font style for paragraphs */
+}
+
+h2 {
+    font-family: 'Josefin Sans'; /* Font style for headings */
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    font-family: 'Josefin Sans';
+    background: linear-gradient(90deg, #ffc107, #ff8800); /* Gradient background */
+    color: #fff; /* White text color */
+    padding: 1.5rem 0; /* Vertical padding */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.5s; /* Smooth color transition on hover */
+}
+
+header:hover {
+    background: linear-gradient(90deg, #ff8800, #ffc107); /* Reverse gradient on hover */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: center;
+    gap: 1.5rem; /* Even spacing between navigation items */
+}
+
+nav a {
+    font-family: 'Poppins';
+    text-decoration: none; /* Remove underline */
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem; /* Slightly larger font size */
+    position: relative; /* Needed for hover effects */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #964502; /* Change text color on hover */
+}
+
+/* Underline effect on hover */
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #964502; /* Underline color */
+    transition: width 0.3s; /* Smooth underline animation */
+}
+
+nav a:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1200px; /* Restrict content width */
+    margin: auto; /* Center main content */
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 3rem; /* Space between sections */
+    padding: 1.5rem;
+    background-color: #fff; /* White background for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Image Styling */
+img {
+    border-radius: 8px; /* Rounded corners for images */
+    width: 30%; /* Restrict image width */
+}
+
+img:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Flexbox Container for Images */
+.flex-container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+}
+
+/* Benefits Section */
+#benefits {
+    font-family: 'Poppins';
+    text-align: justify; /* Align text for easier reading */
+}
+
+#benefits ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#benefits li {
+    position: relative; /* For dropdown positioning */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Form Styling */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 600px; /* Limit the form's width */
+    margin: auto; /* Center the form */
+    padding: 10px; /* Add padding inside the form */
+}
+
+label {
+    font-family: 'Josefin Sans';
+    text-align: left; /* Align label text to the left */
+    margin-bottom: 5px; /* Space below each label */
+}
+
+/* Input and Button Styling */
+input[type=text], 
+input[type=email], 
+input[type=number], 
+button {
+    width: 100%; /* Full width for inputs and button */
+    padding: 12px 20px;
+    margin: 8px 0; /* Space between elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+button {
+    font-family: 'Josefin Sans';
+    background-color: #f86706; /* Bright orange background */
+    color: black; /* Black text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+button:hover {
+    background-color: #aa4705; /* Darker orange on hover */
+    color: white; /* White text on hover */
+}
+
+/* Footer Styling */
+footer {
+    background: #ff9d2c; /* Orange background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1.5rem 0; /* Vertical padding */
+    font-size: 0.9rem; /* Smaller font size */
+    letter-spacing: 0.05em; /* Add slight spacing between letters */
+}
+
+/* Dynamic Date and Time Styling */
+#datetime {
+    margin-top: 1rem;
+    font-style: italic; /* Italicized text */
+    color: #ffffff;
+    font-size: 0.85rem; /* Smaller font size for date/time */
+}
